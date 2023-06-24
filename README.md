@@ -1,9 +1,12 @@
 # My Terraform MODULE to provision an EKS Cluster with custom Networking -----
 
 
-# Sample Usage
+# Sample Usage:
+
+
+~~~~~~
 module "eks-module" {
-  source         = "github.com/bnwokoye/my-eks-module.git"
+  source         = "github.com/bnwokoye/my-eks-module"
   region         = "Enter your Providers region here"
   vpc_cidr       = "10.0.0.0/16"
   dns_hostnames  = true
@@ -21,3 +24,5 @@ module "eks-module" {
   capacity_type  = "ON_DEMAND"
 
 }
+
+~~~~~~
